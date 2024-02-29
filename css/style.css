@@ -1,0 +1,149 @@
+@import url(https://fonts.googleapis.com/css?family=Overpass:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100vh;
+    font-family: "Overpass", sans-serif;
+    background: #131518;
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-window{
+    width: 25.75rem;
+    
+    padding: 32px 40px 32px 32px;
+    
+    border-radius: 30px;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, rgb(35, 42, 52) 0%, rgb(24, 30, 39) 100%);
+}
+
+.star{
+    margin-bottom: 30px;
+    width: 48px;
+    height: 48px;
+    
+    background: #262e38;
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.text{
+    margin-bottom: 24px;
+    color: #969fad;
+    font-size: 15px;
+    line-height: 160%;
+}
+
+.ball-box{
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 8px;
+}
+
+.ball{
+    width: 51px;
+    height: 51px;
+    
+    border-radius: 50%;
+    background: #262e38;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    
+    color: #7c8798;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+}
+
+.ball:hover{
+    cursor: pointer;
+    background: #fc7614;
+    color: #fff;
+}
+
+.submit__btn{
+    width: 100%;
+    height: 45px;
+    
+    background: #fc7614;
+    border-radius: 22px;
+    border: none;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+}
+
+.submit__btn:hover{
+    background: #fff;
+    color: #fc7614;
+}
+
+@media (max-width: 600px) {
+    .rating-window{
+        width: 20.5rem;
+
+        padding: 24px;
+    }
+
+    .star{
+        margin-bottom: 16px;
+    }
+
+    .title{
+        margin-bottom: 17px;
+        font-size: 24px;
+    }
+
+    .text{
+        font-size: 14px;
+        line-height: 157%;
+    }
+
+    .ball-box{
+        margin-bottom: 24px;
+    }
+
+    .ball{
+        width: 42px;
+        height: 42px;
+    }
+}
